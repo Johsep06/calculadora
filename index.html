@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="data-container">
+        <h1 class="destaque">Gaiadelas Industries</h1>
+        
+        <figure>
+            <h2>apoio: PEDRODELAS</h2>
+            <div id="pedro"></div>
+        </figure>
+    </section>
+    <main id="math-container">
+        <div id="tela">
+            <h5 id="equacao">0</h5>
+            <h1 id="resultado">0</h1>
+        </div>
+        <div id="buttons-container">
+            <button class="destaque" id="percentual"> % </button>
+            <button class="destaque" id="potencia" onclick="calcularQuadrado()"> X <sup class="destaque">2</sup> </button>
+            <button class="destaque" id="radical" onclick="calcularRaizQuadrada()"> √ </button>
+            <button id="dividido" onclick="adicionarValor('/')"> ÷ </button>
+            <button id="7" onclick="adicionarValor('7')">7</button>
+            <button id="8" onclick="adicionarValor('8')">8</button>
+            <button id="9" onclick="adicionarValor('9')">9</button>
+            <button id="vezes" onclick="adicionarValor('*')"> X </button>
+            <button id="4" onclick="adicionarValor('4')">4</button>
+            <button id="5" onclick="adicionarValor('5')">5</button>
+            <button id="6" onclick="adicionarValor('6')">6</button>
+            <button id="menos" onclick="adicionarValor('-')"> - </button>
+            <button id="1" onclick="adicionarValor('1')">1</button>
+            <button id="2" onclick="adicionarValor('2')">2</button>
+            <button id="3" onclick="adicionarValor('3')">3</button>
+            <button id="mais" onclick="adicionarValor('+')"> + </button>
+            <button class="destaque" onclick="limpar('0')"> C </button>
+            <button id="0" onclick="adicionarValor('0')"> 0 </button>
+            <button id="decimal" onclick="adicionarValor('.')"> . </button>
+            <button id="igual" onclick="calcular()"> = </button>
+        </div>
+
+    </main>
+</body>
+
+<script src="script.js"></script>
+
+</html>

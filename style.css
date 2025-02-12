@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+body {
+    background-image: linear-gradient( 90deg,#0B0A0C 0%, #19181B 50%, #2D2B2F 80%);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: 500;
+}
+
+#math-container {
+    height: 90vh;
+    width: 60vh;
+    background-color: #2D2A37;
+    min-height: 300px;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0 0 10PX #5F5F5F;
+    border-radius: 10px;
+}
+
+#data-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    height: 90vh;
+}
+
+#tela {
+    width: 90%;
+    height: 20%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+}
+
+h5 {
+    display: block;
+    font-size: 1.5em;
+    color: #525156;
+}
+
+h1 {
+    display: block;
+    font-size: 4em;
+}
+
+
+#buttons-container {
+    width: 90%;
+    height: 70%;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+button {
+    transition: .1s;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+    border: 0.1px solid #000;
+    box-shadow: 5px 5px 5px #000;
+    background-image: linear-gradient(#2C2936, #363340);
+}
+
+button:hover {
+    transform: scale(1.1);
+    transition: .1s;
+}
+
+#dividido {
+    background-image: linear-gradient(#442773, #4C3079);
+}
+
+#vezes {
+    background-image: linear-gradient(#452874, #482F71);
+}
+
+#menos {
+    background-image: linear-gradient(#442773, #4F327E);
+}
+
+#mais {
+    background-image: linear-gradient(#452874, #452E6D);
+}
+
+#igual {
+    background-image: linear-gradient(#7240C7, #854EE3);
+}
+.destaque {
+    color: #854EE3;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2D2A37;
+    box-shadow: 0 0 5px #5F5F5F;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#pedro {
+    height: 150px;
+    width: 150px;
+    background-image: url(./imgs/pedroPiadas.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
